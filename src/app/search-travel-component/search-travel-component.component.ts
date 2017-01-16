@@ -9,33 +9,49 @@ export class SearchTravelComponentComponent implements OnInit {
 
   constructor() { }
 
-  from : string;
-  to : string;
   dateToTravel : string;
+  from : string;
+  destiny : string;
 
   ngOnInit() {
   }
 
   availableTravelsSource = [
     {
-      day:"14-01-15 10:30", destiny:"sta cruz"
+      day:"14-01-2017 10:30", from: "oruro", destiny:"santa cruz"
     }, 
     {
-      day:"06-01-17 1:30", destiny:"oruro"
+      day:"06-01-2017 1:30", from: "cochabamba", destiny:"oruro"
     }, 
     {
-      day:"21-01-14 5:30", destiny:"cochabamba"
+      day:"21-01-2017 5:30", from: "tarija", destiny:"cochabamba"
     }, 
     {
-      day:"16-03-13 08:45", destiny:"sucre"
+      day:"16-03-2017 08:45", from: "santa cruz", destiny:"sucre"
     }, 
     {
-      day:"12-08-2016 05:05", destiny:"sucre"
+      day:"12-08-2017 05:05", from: "la paz", destiny:"sucre"
+    },
+    {
+      day:"14-01-2017 10:30", from: "sucre", destiny:"santa cruz"
+    }, 
+    {
+      day:"06-01-2017 1:30", from: "cochabamba", destiny:"oruro"
+    }, 
+    {
+      day:"21-01-2017 5:30", from: "santa cruz", destiny:"cochabamba"
+    }, 
+    {
+      day:"16-03-2017 08:45", from: "santa cruz", destiny:"sucre"
+    }, 
+    {
+      day:"12-08-2017 05:05", from: "oruro", destiny:"sucre"
     }
-    ];
-  availableTravels = [];
+  ];
+
+  availableTravels = this.availableTravelsSource;
 
   clicked(event) {
-    this.availableTravels = this.availableTravelsSource.filter(t => t.destiny === this.to || t.destiny === this.from);    
+      this.availableTravels = this.availableTravelsSource.filter(t => t.destiny === this.destiny || t.from === this.from || t.day ===this.dateToTravel ).sort();         
   }
 }
