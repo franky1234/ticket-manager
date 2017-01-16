@@ -1,0 +1,31 @@
+.label-seat{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.label-title-reservation{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.tag-register{
+    margin-bottom: 50px;
+}
+
+.tag-passenger{
+    margin-bottom: 40px; 
+}
+
+.custom-select{
+    height: 35px;
+    border-radius: 5px;
+}
+.data-groups{
+    background : #f5f8fd;
+    margin-bottom: 30px;
+}
+
+.option-year{
+    margin-left: 25px;
+}
+.book{
+    text-align: center;
+}

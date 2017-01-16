@@ -5,16 +5,26 @@ import { HttpModule } from '@angular/http';
 
 import { AlertModule } from 'ng2-bootstrap';
 import { AppComponent } from './app.component';
+import { SearchTravelComponentComponent } from './search-travel-component/search-travel-component.component';
+import { RouterModule, Routes } from '@angular/router';
+import { ReservationComponent } from './reservation/reservation.component';
+import { TicketComponent } from './ticket/ticket.component';
+import {AppRoutingModule} from './app.routing.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchTravelComponentComponent,
+    ReservationComponent,
+    TicketComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

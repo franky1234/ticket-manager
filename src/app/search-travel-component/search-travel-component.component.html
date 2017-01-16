@@ -1,0 +1,61 @@
+  <div class="container-search">
+    
+    <div class="input-search">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-road"></i></span>
+        <input id="To" [(ngModel)]="from" type="text" class="form-control" name="To" placeholder="To">
+      </div>
+    </div>
+
+    <div class="input-search">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon glyphicon-bed"></i></span>
+        <input id="from" [(ngModel)]="destiny" type="text" class="form-control" name="from" placeholder="From">
+      </div>
+    </div>
+
+    <div class="input-search">
+      <div class="input-group">        
+        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+        <input class="form-control" [(ngModel)]="dateToTravel" type="date" name="fechahora" step="1" min="2013-01-01T00:00" max="2013-12-31T12:00" value="2013-01-01T12:00">           
+      </div>
+    </div>
+
+    <div class="input-search">
+      <div class="input-group">        
+        <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+        <input class="form-control" type="time" min="00:00" max="23:55" value="00:00">           
+      </div>
+    </div>
+    
+    <div class="input-search">
+      <div class="btn-group btn-group-justified">                
+        <a (click)="clicked()" class="btn btn-primary">Search</a>
+      </div>
+    </div>
+
+  </div>
+
+
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Schedule</th>
+        <th>From</th> 
+        <th>Destiny</th>        
+        <th>Select Travel</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let travel of availableTravels">
+        <td>{{ travel.day }}</td>
+        <td>{{ travel.from }}</td>
+        <td>{{ travel.destiny }}</td>
+        <td>          
+          <a routerLink="/reservations" class="btn btn-primary" routerLinkActive="active">View</a>
+        </td>        
+      </tr>      
+    </tbody>
+  </table>
+</div>

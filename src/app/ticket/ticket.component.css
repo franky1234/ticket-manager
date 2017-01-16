@@ -1,0 +1,17 @@
+.table-head{
+    background-color: #337ab7;
+}
+.table-row{
+    background-color: #ecedef;
+}
+
+.row-span{
+    background-color: #ecedef;
+    text-align: center;
+}
+.data-groups{
+    text-align: center;
+}
+.code{
+    color: #e84c3d;
+}

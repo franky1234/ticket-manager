@@ -1,0 +1,33 @@
+.container-search {
+    width: 100%;
+    background-color: #6BC5D3;
+    height: auto;
+    margin-top: 20px;
+}
+
+.input-search {
+    float: left;
+    width: calc(20% - 20px);
+    margin-right: 20px;
+}
+
+input[type="date"] {
+    margin-right: 60px;    
+}
+
+@media screen and (max-width: 950px) {
+    .input-search {  
+        width: 100%;
+        margin-right: 0;
+        display: block;
+        margin-bottom: 10px;
+    }        
+}
+
+@media screen and (width: 1024px) {
+    input[type="date"] {
+        margin-right: -36px;    
+    }
+}
+
+

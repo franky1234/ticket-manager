@@ -1,0 +1,154 @@
+<div class="row">
+  <label class="label-title-reservation col-md-12 h1 form-heading">Passenger Detail</label>
+</div>
+
+<div class="container">
+  <form>
+    <div class="data-groups col-sm-12">
+      <div class="form-group row">
+        <label class="col-sm-10 col-form-label h4 form-heading">Primary Passenger</label>
+        <div class="col-sm-2 col-form-label label-seat">
+          Seat : <label>B7</label>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="name" placeholder="Type your name" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="lastname" class="col-sm-2 col-form-label">Last Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="lastname" placeholder="Type your last name" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="genre" class="col-sm-2 col-form-label">Genre:</label>
+        <div class="col-sm-1">
+          <select class="custom-select" id="genre" data-toggle="dropdown" required>
+          <option selected>Choose..</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Other</option>
+        </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="number-document" class="col-sm-2 col-form-label">Number of Document:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="number-document" placeholder="Type your # document" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="type-document" class="col-sm-2 col-form-label">Type of document:</label>
+        <div class="col-sm-1">
+          <select class="custom-select" id="type-document" data-toggle="dropdown" required>
+          <option selected>Choose..</option>
+          <option value="1">D.N.I</option>
+          <option value="2">Passport</option>
+        </select>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="data-groups col-sm-12">
+      <div class="form-group row">
+        <label class="col-sm-12 col-form-label h4 form-heading">Payment Options</label>
+      </div>
+      <div class="form-group row">
+        <label for="number-card" class="col-sm-2 col-form-label">Credit Card Number:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="number-card" placeholder="Enter your number of credit card" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="expire-month" class="col-sm-2 col-form-label">Expire Date:</label>
+          <div class="col-sm-1">
+            <select class="custom-select" id="expire-month" data-toggle="dropdown" required>
+            <option selected>Month..</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+
+        <div class="col-sm-3">
+            <select class="option-year custom-select" id="expire-year" data-toggle="dropdown" required>
+            <option selected>Year..</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-group row">
+        <label for="code-security" class="col-sm-2 col-form-label">Security Code:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="code-security" placeholder="Enter your security code" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="name-card" class="col-sm-2 col-form-label">Name on Card:</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="name-card" placeholder="Enter name card" required>
+        </div>
+      </div> 
+    </div>
+
+    <div class="data-groups col-sm-12">
+      <div class="form-group row">
+        <label class="col-sm-12 col-form-label h4 form-heading">Contacts Detail</label>
+      </div>
+
+      <div class="form-group row">
+        <label for="phone-number" class="col-sm-2 col-form-label">Phone Number:</label>
+
+        <div class="col-sm-1">
+            <select class="code-phone custom-select" id="code-phone" data-toggle="dropdown" required>
+            <option value="+591" selected>+591 (Bol)</option>
+            <option value="+51">+51 (Per)</option>
+            <option value="+48">+48(Pol)</option>
+          </select>
+        </div>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="phone-number" placeholder="Enter phone number" required>
+        </div>
+      </div> 
+
+    <div class="form-group row">
+      <label for="e-mail" class="col-sm-2 col-form-label">E-mail ID:</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="e-mail" placeholder="Enter your e-mail" required>
+      </div>
+    </div> 
+
+    </div>
+
+     <div class="data-groups col-sm-12 for-group row book">
+       <button type="button" class="btn btn-primary">Go Back</button>
+       <a routerLink="/tickets" class="btn btn-primary" routerLinkActive="active">Book Now</a>
+     </div>
+
+  </form>
